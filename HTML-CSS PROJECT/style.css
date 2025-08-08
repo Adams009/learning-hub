@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variable Declaration */
+:root {
+    --primary-color: #4CAF50;
+    --main-color: #449D75;
+    --text-color: #333;
+    --font-family: 'Crimson Text', serif;
+}
+
+/* Utility Style */
+button {
+    background-color: var(--main-color);
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+}
+
+.highlight {
+    /* background-color:rgb(222, 132, 132); */
+    background-color: var(--primary-color);
+    color:  rgb(246, 208, 17);
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  .highlight-1 {
+    /* background-color:rgb(222, 132, 132); */
+    background-color:  var(--primary-color);
+    color: rgb(246, 208, 17);
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+/* NAV STYLE START */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:azure;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+li a {
+    text-decoration: none;
+    color: azure;
+    margin: 20px;
+    padding-bottom: 5px;
+}
+
+a:hover {
+    border-bottom: 2px solid var(--primary-color);
+    transition: 0.4s;
+}
+/* NAV STYLE ENDS */
+
+/* HEADEER STYLE STARTS */
+header {
+    font-family: var(--font-family);
+    background-image: url(images/ofada-removebg-preview\ \(1\)\ \(6\).png);
+    background-position: center; 
+    background-size: cover;
+    height: 100vh;
+    font-weight: normal;
+    mix-blend-mode: hard-light;
+    position: relative;
+    color: azure;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+.secondary-header span {
+    display: block;
+    font-size: 1.7rem;
+    text-align: center;
+    
+}
+
+.primary-header span {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+header h1, header h2{
+    /* color: rgb(254, 255, 237); */
+    color: azure;
+    text-align: center;
+}
+
+header p {
+    /* color: rgb(254, 255, 237); */
+    color: azure;
+    position: absolute;
+    top: 20%;
+    font-size: 1rem;
+    font-weight: 900px;
+}
+
+.secondary-header {
+    position: absolute;
+    top: 7%;
+}
+
+.main-header {
+    position: absolute;
+    bottom: 50%;
+    word-spacing: 12px;
+    margin-bottom: 30px;   
+}
+
+.primary-header {
+    position: absolute;
+    bottom: 20%;
+    word-spacing: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main-btn {
+    /* background: rgb(219, 209, 76); */
+    /* background: burlywood; */
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 37%;
+    /* color:  var(--main-color); */
+    color: rgb(254, 255, 237);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    /* transition: background-color 0.3s ease; */
+}
+
+/* HEADEER STYLE ENDS */
+
+/* OUR-STORY STYLE STARTS */
+.our-story{
+    height: 100vh;
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.img {
+    width: 350px;
+    height: 350px;
+    background-image: url(images/ofada-rices\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+.title-style {
+    display: flex;
+    align-items: center;
+}
+ 
+.title {
+    font-family: var(--font-family);
+    font-size: 4rem;
+    color: azure;
+    transform: translateX(-100px);
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color:  rgb(254, 255, 237);
+    transform: translateX(-120px);
+}
+
+.section-content p{
+    max-width: 500px;
+    /* color: azure; */
+    color: rgb(254, 255, 237);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px;
+    margin: 20px 0;
+}
+/* OUR-STORY STYLE END*/
+
+/* OFADA CONTAINER STYLE STARTS */
+.ofada-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+.img-2 {
+    width: 400px;
+    height: 400px;
+}
+
+.title-two {
+    font-family: var(--font-family);
+    font-size: 3rem;
+    color: azure;
+    /* margin-bottom: 20px; */
+}
+
+.content-section p {
+    max-width: 500px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(254, 255, 237);
+}
+
+/* OFADA CONTAINER STYLE ENDS */
+
+/* PRODUCTS STYLE STARTS */
+.products {
+    margin-top: 5rem;
+}
+
+.title-three {
+    font-size: 4rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* color: #449D75; */
+}
+
+.card {
+    border: 2px solid var(--text-color);
+    padding: 0 20px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.card-img {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+}
+
+.img-one {
+    background-image: url(images/slazzer-edit-image.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-two {
+    background-image: url(images/slazzer-edit-image.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-three {
+    background-image: url(images/slazzer-edit-image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-title {
+    color: azure;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+}
+
+.card p {
+    color: rgb(254, 255, 237);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 0;
+}
+
+/* PRODUCT STYLE ENDS */
+
+/* Footer Style start */
+footer {
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(254, 255, 237);
+}
+
+footer .container {
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+footer .heading-info {
+    margin-bottom: 20px;
+}
+
+footer p {
+    line-height: 25px;
+}
+
+footer span {
+    color: rgb(246, 208, 17);
+}
+
+/* footer hr {
+    margin-bottom: 20px;
+    border: var(--main-color);
+    width: 500px;
+    margin: 0 auto;
+} */
+
+.para {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(254, 255, 237);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    .main-header, .primary-header, .secondary-header {
+        font-size: 2.5rem;
+    }
+
+    .our-story {
+        text-align: center;
+    }
+
+    .title-style {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .our-story .title {
+        transform: translateX(50px);
+    }
+
+    .our-story .line {
+        flex-shrink: 5;
+    }
+
+    .our-story .img-container{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .ofada-container .img-container {
+        margin-top: 5rem;
+        width: 50%;
+    }
+
+    .title {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .title-two{
+        margin: 0 auto;
+    }
+}

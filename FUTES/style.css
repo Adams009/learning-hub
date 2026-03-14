@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf2ff;
+    color: #1f2937;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3b82f6;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+.role {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.intro {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.section {
+    margin-bottom: 18px;
+}
+
+h2 {
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: #1e3a8a;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+pre {
+    background-color: #111827;
+    color: #e5e7eb;
+    padding: 12px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+.quote {
+    background-color: #eff6ff;
+    border-left: 4px solid #2563eb;
+    padding: 12px;
+    border-radius: 8px;
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+.card-footer {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 14px;
+    display: grid;
+    gap: 8px;
+    color: #4b5563;
+}
+
+address {
+    font-style: normal;
+}
+
+.button {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 4px;
+    text-decoration: none;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
